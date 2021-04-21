@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/Damhan/arRest-api/issues"
   },
-  "homepage": "https://github.com/Damhan/arRest-api#readme"
+  "homepage": "https://github.com/Damhan/arRest-api#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
