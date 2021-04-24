@@ -1,8 +1,9 @@
 const express = require("express");
 const fs = require("fs");
 const MongoClient = require('mongodb').MongoClient;
+const mongoUri = require('./../CONFIG/mongo-uri');
 
-const uri = "mongodb+srv://Damhan:RyUCNX5M4usQUTQ5@cluster0.qwy66.mongodb.net/arREST-DB?retryWrites=true&w=majority";
+const uri = mongoUri.secretUri;
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 
 const app = express();
